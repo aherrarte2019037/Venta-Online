@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+   text-align: center;
+   font-family: 'Century Gothic', sans-serif;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   top: 50px;
+   left: 30vw;
+   right: 30vw;
+   font-size: 40px;
+   color: rgb(29, 29, 29);
+}
+
+.wave-div1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-div1 svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 150px;
+}
+
+.wave-div1 .shape-fill {
+    fill: #72b3fdf1;
+}
+
+.wave-div2 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-div2 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 98px;
+}
+
+.wave-div2 .shape-fill {
+    fill: #2684f0;
+}
+
+.main-container {
+    margin-left: 30px;
+    margin-right:30px;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.left-container {
+    width: 50%;
+    max-width: 500px;
+    margin-right: 7vw;
+}
+
+.right-container {
+    max-width: 500px;
+    width: 50%;
+}
+
+.right-container img {
+    width: 80%;
+    max-width: 350px;
+    max-height: 525px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #c9c7c7;
+}
+
+.left-container h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left-container p {
+    font-style: italic;
+    text-align: justify;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left-container > div {
+    box-shadow: 5px 5px 15px 5px #d4d3d3;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+
+.div-text1 {
+    background: linear-gradient(to right, #d6a4f3, #ff9068);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-text1 div img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.div-text2 div img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.div-text3 div img {
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+}
+
+.div-text2 {
+    background: linear-gradient(to right, #73d7fc, #fc87b0);
+}
+
+.div-text3 {
+    background: linear-gradient(to right, #92adf8, #faa3b3)
+}
