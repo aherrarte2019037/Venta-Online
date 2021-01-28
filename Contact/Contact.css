@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    margin-left: 30px;
+    margin-right:30px;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.left-container {
+    width: 50%;
+    max-width: 500px;
+    margin-right: 7vw;
+    text-align: center;
+}
+
+.left-container h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(43, 43, 43);
+    margin-bottom: 0;
+}
+
+.left-container p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(68, 68, 68);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left-container .logo-text {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.left-container img {
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+}
+
+.right-container {
+    max-width: 500px;
+    width: 50%;
+}
+
+.right-container form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px #e6e4e4;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(248, 248, 248);
+    height: 50vh;
+    padding: 10px 50px;
+}
+
+.right-container form input, .right-container form input:active, textarea {
+    font-family: 'Open Sans', sans-serif;
+    color: #969696;
+    border: 1px solid #dadada;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    outline: none;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+.right-container form button {
+    border: none;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    background: rgb(253, 99, 107);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.right-container form button:focus {
+    outline: none;
+}
+
+.right-container form input::placeholder, textarea::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #b3b0b0;
+}
+
+form h3 {
+    text-align: center;
+    margin-top: -25px;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+
+.wave-bg {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    max-width: 100%;
+    min-width: 1400px;
+}

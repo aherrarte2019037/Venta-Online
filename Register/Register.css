@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-container {
+    padding: 20px 15px 20px 15px;
+    width: 420px;
+    height: 550px;
+    border-radius: 18px;
+    background: whitesmoke;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+}
+
+.shadow-container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .15);
+    height: 600px;
+    width: 420px;
+    z-index: -1;
+    padding: 20px 15px 20px 15px;
+    transform: rotate(8deg);
+}
+
+.register-container h1 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 0;
+    color: rgb(63, 63, 63);
+    font-style: italic;
+}
+
+.register-container h3 {
+    margin-top: 5px;
+    margin-bottom: -8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgb(95, 95, 95);;
+}
+
+.register-container img {
+    margin-top: -80px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form input {
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    border: none;
+    border: 1px solid silver;
+    outline: none;
+    width: 74%;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+    font-weight: normal;
+}
+
+.form input::placeholder {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 13px;
+}
+
+.form input:focus {
+    border-color: rgb(100, 166, 241);
+}
+
+.form input:focus::placeholder {
+    color: rgb(100, 166, 241);
+}
+
+#txtPass ,#txtPass2 {
+    width: 31%;
+    margin-top: 20px;
+}
+
+#txtPass {
+    margin-right: 6px;
+}
+
+#txtPass2 {
+    margin-left: 6px;
+}
+
+#txtEmail {
+    margin-top: 20px;
+}
+
+.btn-login {
+    cursor: pointer;
+    width: 71%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 20px;
+    margin-top: 25px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+    border: none;
+    padding: 8px 25px 8px 25px;
+    appearance: button;
+}
+
+.btn-register {
+    cursor: pointer;
+    width: 82%;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #f2709c, #ff9472);    border: none;
+    padding: 8px 25px 8px 25px;
+    margin-top: 25px;
+}
+
+.register-div {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.register-div hr {
+    width: 30%;
+    border-top: 1px solid rgb(179, 177, 177);
+}
+
+.register-div span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: rgb(112, 111, 111);
+}
+
+.register-buttons-div {
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-facebook img {
+    width: 49px;
+    height: 49px;
+}
+
+.btn-instagram img {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-google img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 4px;
+}
