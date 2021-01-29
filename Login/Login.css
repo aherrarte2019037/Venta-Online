@@ -6,6 +6,52 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.navbar img {
+    float: left;
+    width: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.navbar span {
+    float: left;
+    color: #778adf;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.navbar a {
+    float: left;
+    color: rgb(129, 129, 129);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.4s ease-out;
+}
+  
+.navbar a:hover {
+    background-color: #fc7874;
+    color: rgb(255, 255, 255)!important;
+    border-bottom: 2px solid #fc7874;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid rgb(253, 99, 107);;
+    color: rgb(19, 19, 19);
+}
+
 .main-container {
     position: absolute;
     top: 50%;
