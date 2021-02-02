@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -187,9 +191,6 @@ body::-webkit-scrollbar {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-}
-
-.categories-div span:first-child {
     margin-left: 30px;
 }
 
@@ -200,6 +201,7 @@ body::-webkit-scrollbar {
     font-weight: normal;
     cursor: pointer;
     background-color: rgb(119, 133, 255);
+    height: 6px;
     padding: 6px 20px;
     border-radius: 20px;
     box-shadow: 3px 2px 8px 1px #a7a6a6;
@@ -212,8 +214,9 @@ body::-webkit-scrollbar {
 }
 
 .search-input {
-    margin-right: 30px;
-    width: 300px;
+    margin-right: 60px;
+    width: 25vw;
+    max-width: 350px;
     padding: 9px 24px;
     background-color: transparent;
     font-size: 14px;
@@ -226,8 +229,6 @@ body::-webkit-scrollbar {
     background-position: 95% center;
     border-radius: 50px;
     border: 1px solid #a7a7a7;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
 }
 
 .search-input::placeholder {
@@ -262,282 +263,6 @@ body::-webkit-scrollbar {
 
 .main-container h1 .span-2 {
     color: #eb8b3d;
-}
-
-
-@-webkit-keyframes slidein {
-    0% {
-      top: -300px;
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      top: 0px;
-    }
-}
-
-@keyframes slidein {
-    0% {
-      top: -300px;
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      top: 0px;
-    }
-}
-
-@-webkit-keyframes slideout {
-    0% {
-      top: 0;
-      opacity: 1;
-    }
-    100% {
-      top: -300px;
-      opacity: 0;
-    }
-}
-
-  @keyframes slideout {
-    0% {
-      top: 0;
-      opacity: 1;
-    }
-    100% {
-      top: -300px;
-      opacity: 0;
-    }
-}
-
-#products-carousel {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-}
-
-#products-carousel #left-div {
-    background: #fff;
-    height: 100%;
-    width: 100vw;
-    flex-grow: 0;
-    display: flex;
-    width: 30%;
-    align-items: center;
-    margin-left: calc(5vw + 5vw);
-}
-
-#products-carousel #left-div .list {
-    display: flex;
-    list-style: none;
-    align-content: stretch;
-    flex-direction: column;
-    flex-grow: 1;
-    margin: 0;
-    padding: 0;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] {
-    display: none;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label {
-    display: block;
-    opacity: 0.5;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label:hover {
-    opacity: 0.75;
-    cursor: pointer;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label.label-1:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    background-image: url("images/shoe-icon.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
-    transform: rotate(-30deg);
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label.label-2:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    background-image: url("images/shoe-icon.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
-    transform: rotate(-30deg);
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label.label-3:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    background-image: url("images/shoe-icon.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
-    transform: rotate(-30deg);
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ label.label-4:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    background-image: url("images/shoe-icon.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
-    transform: rotate(-30deg);
-}
-
-.content h1, p {
-    padding: 0;
-    margin: 0;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content {
-    position: absolute;
-    right: 2%;
-    top: -400px;
-    width: 650px;
-    height: 320px;
-    -webkit-animation-duration: 0.75s;
-            animation-duration: 0.75s;
-    -webkit-animation-name: slideout;
-            animation-name: slideout;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-1 .content-img {
-    height: 200px;
-    width: 200px;
-    background-image: url("images/air-max-fire.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-1 h1 {
-    color: #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-2 .content-img {
-    height: 200px;
-    width: 200px;
-    background-image: url("images/air-jordan.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-2 h1 {
-    color: #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-3 .content-img {
-    height: 120px;
-    width: 250px;
-    background-image: url("images/adidas-courtmaster.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-3 h1 {
-    color: #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-4 .content-img {
-    height: 180px;
-    width: 180px;
-    background-image: url("images/skechers-ultra-flex.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content.content-4 h1 {
-    color: #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio] ~ .content p {
-    max-width: 50%;
-    text-align: center;
-}
-
-#products-carousel #left-div .list li.item input[type=radio]:checked ~ label {
-    opacity: 1;
-    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-#products-carousel #left-div .list li.item input[type=radio]:checked ~ label.label-1 {
-    color: #00B16A;
-    border-right: solid 4px #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio]:checked ~ label.label-2 {
-    color: #00B16A;
-    border-right: solid 4px #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio]:checked ~ label.label-3 {
-    color: #00B16A;
-    border-right: solid 4px #00B16A;
-}
-
-#products-carousel #left-div .list li.item input[type=radio]:checked ~ label.label-4 {
-    color: #00B16A;
-    border-right: solid 4px #00B16A;
-}
-
- #products-carousel #left-div .list li.item input[type=radio]:checked ~ .content {
-    -webkit-animation-duration: 0.75s;
-            animation-duration: 0.75s;
-    -webkit-animation-name: slidein;
-            animation-name: slidein;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
- #products-carousel #border {
-    background-color: #eee;
-    height: 75%;
-    flex-grow: 1;
-    max-width: 2px;
-    z-index: 0;
-}
-
- #products-carousel #right-zone {
-    height: 100%;
-    flex-grow: 3;
 }
 
 .footer{
@@ -757,13 +482,82 @@ body::-webkit-scrollbar {
     padding: 6px 50px;
     font-size: 14px;
     border-radius: 20px;
-    text-decoration: none;
-    box-shadow: 2px 5px 15px 0px #c2c1c1;
-    transition: box-shadow 0.3s ease-out;
 }
 
-.all-products .btn-products:hover {
-    box-shadow: 2px 5px 15px 0px #949494;
+.category-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-category {
+    line-height: 80px;
+    text-decoration: none;
+    text-align: center;
+    appearance: button;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 85px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+    box-shadow: 3px 5px 15px 5px #c5c4c4;
+}
+
+.btn-category:nth-child(1) {
+    background: linear-gradient(to right, #22c1c3, #f5c660);
+    background-size: 180%;
+}
+
+.btn-category:nth-child(2) {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    background-size: 180%;
+}
+
+.btn-category:nth-child(3) {
+    background: linear-gradient(to right, #a8c0ff, #7d6ad1);
+    background-size: 180%;
+}
+
+.btn-category:nth-child(4) {
+    background: linear-gradient(to right, #e67fbd, #8845ac);
+    background-size: 180%;
+}
+
+.btn-category:hover {
+    background-position-x: 80%;
+    transform: translateY(-10px);
+}
+
+.btn-category::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-category:hover::before {
+    transform: scale(1);
+    bottom: -10px;
+}
+
+#nike-title, #jordan-title {
+    margin-top: 120px;
 }
 
 .navbar a:last-child {

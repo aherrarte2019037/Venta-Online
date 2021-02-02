@@ -95,6 +95,14 @@ textarea {
     font-weight: bold;
 }
 
+.navbar a:last-child {
+    float: right;
+}
+
+.navbar a:last-child:hover {
+    border: 0;
+}
+
 .right-container form button:focus {
     outline: none;
 }

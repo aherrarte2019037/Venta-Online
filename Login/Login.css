@@ -101,6 +101,14 @@
     margin-top: -80px;
 }
 
+.navbar a:last-child {
+    float: right;
+}
+
+.navbar a:last-child:hover {
+    border: 0;
+}
+
 .form {
     margin-top: 40px;
 }

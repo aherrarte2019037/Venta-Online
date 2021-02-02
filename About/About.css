@@ -198,3 +198,11 @@ h1 {
     border-bottom: 2px solid rgb(253, 99, 107);;
     color: rgb(19, 19, 19);
 }
+
+.navbar a:last-child {
+    float: right;
+}
+
+.navbar a:last-child:hover {
+    border: 0;
+}
